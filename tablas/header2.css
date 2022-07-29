@@ -1,0 +1,71 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+
+
+header{
+    width: 100%;
+    margin: auto;
+    background-color: rgba(231, 229, 97, 0.842);
+}
+
+.logonav{
+    width: 80px;
+    height: 40px;
+    padding: 8px 8px;
+    float: left;
+}
+
+nav{
+    display: inline-block;
+    max-width: 900px;
+    margin: auto;
+    font-size: 25px;
+
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-horizontal > li > a{
+    display: block;
+    padding: 14px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+/* cuando pase el mause va a cambiar de color */
+.menu-horizontal > li:hover{
+    background-color: rgb(63, 205, 198);
+    transition: all ease-in-out 300ms;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+  background-color: rgb(211, 211, 211);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+    transition: all ease-in-out 300ms;
+}
+
+.menu-vertical li:hover{
+    background-color: rgb(255, 174, 0);
+}
+
+.menu-vertical li a{
+    display: block;
+    color: rgb(0, 217, 255);
+    padding: 15px 15px 20px 15px;
+    text-decoration: none;
+}
