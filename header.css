@@ -10,13 +10,18 @@ header{
     width: 100%;
     margin: auto;
     background-color: rgba(231, 229, 97, 0.842);
+    padding: 40px;
 }
 
 .logonav{
-    width: 80px;
-    height: 40px;
+    width: 200px;
+    height: 100px;
     padding: 8px 8px;
-    float: left;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
 }
 
 nav{
@@ -31,6 +36,7 @@ nav{
     list-style: none;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .menu-horizontal > li > a{
