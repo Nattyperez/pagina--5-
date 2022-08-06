@@ -1,0 +1,58 @@
+/* h1{
+    color:white;
+    text-align : center;
+    font-size: 40px;
+ */
+
+}
+.p1{
+    color:black;
+}
+
+h2{
+    color:darkgreen;
+    text-align:center;
+    font-size: 40px;
+}
+.p2{
+    color:darkorange;
+}
+
+
+h3{
+    color:fuchsia;
+    text-align: center;
+    font-size: 40px;
+    
+}
+.p3{
+    color:indianred;
+}
+
+
+h4{
+    color:lawngreen;
+    text-align: center;
+    font-size: 40px;
+}
+.p4{
+    color:lightcoral;
+}
+
+/* h5{
+    color:black;
+    text-align: center;
+    font-size: 40px;
+} */
+.p5{
+    color: midnightblue;
+}
+
+h6{
+    color: skyblue;
+    text-align: center;
+    font-size: 40px;
+}
+.p6{
+    color: thistle;
+}

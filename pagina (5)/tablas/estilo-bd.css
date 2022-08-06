@@ -1,0 +1,23 @@
+.table-fill{
+    
+    background: rgb(135, 244, 248);
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 100px;
+    margin: auto;
+    max-width: 600px;
+    padding: 5px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    animation: float 5s infinite;
+}
+
+tr{
+    
+    border-top: 1px solid #C1c3d1;
+    border-bottom: 1px solid #C1c3d1;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    text-shadow: 0 1px 1px rgba(256,256,256,0.1);
+}

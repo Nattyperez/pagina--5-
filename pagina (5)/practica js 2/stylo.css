@@ -1,0 +1,15 @@
+.card{
+    width: 200px;
+    height: 150px;
+    background-color: chartreuse;
+    border: solid 20px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form{
+    text-align: center;
+    font-size: 40px;
+}
+ 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/include.js"></script>
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="stylo.css">
+</head>
+<body>
+    <div data-include="nav.html"></div>
+    <input type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
+    <div class="form">
+    
+    <div>
+        <h1>Login</h1>
+        <br>
+        <form action="" name="login" method="get">
+            <label for="usuario">Usuario</label>
+            <br>
+            <input class="for" type="text" name="usuario" id="usuario" maxlength="30" placeholder="Ingresa tu usuario">
+            <br>
+            <label for="contra">Contraseña</label>
+            <br>
+            <input class="for" type="text" name="contra" id="contra" maxlength="30" placeholder="Ingresa tu contraseña">
+            <br>
+            <br>
+            <input class="boton" type="button" name="btn" id="btn" onclick="comparar()" value="login">
+
+
+        </form>
+        <script>
+            function comparar(){
+                var usuario = document.getElementById("usuario").value;
+                var contra = document.getElementById("contra").value;
+                if (usuario == "julio" && contra == "123"){
+                    alert("usuario correcto");
+                    window.location = "index.html";
+                    return false;
+                }
+                else{
+                    alert("Usuario o contraseña inorrecta");
+                    window.location = "login.html";
+                    document.getElementById("usuario").disabled = true;
+                    document.getElementById("contra").disabled = true;
+                    document.getElementById("btn"),disabled = true;
+                    return false;
+                }
+    
+            }
+        </script>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario js</title>
+    <link rel="stylesheet" type="text/css" href="stylo.css">
+</head>
+<body>
+
+    <h1>Formulario Js</h1>
+    <input type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
+    
+    <form class="card" action="" name="formulario" method="get">
+        <input class="for" type="text" name="nombre" id="nombre"maxlength="30" placeholder="nombre">
+        <br>
+        <input class="for" type="text" name="apellidoP" id="apellidoP" maxlength="30" placeholder="apellidoP">
+        <br>
+        <input class="for" type="text" name="apellidoM" id="apellidoM" maxlength="30" placeholder="apellidoM">
+        <br>
+        <input class="for" type="text" name="numtelefono" id="numtelefono" maxlength="30" placeholder="numtelefono">
+        <br>
+
+        <input type="radio" name="sexo" id="hombre" value="hombre">hombre
+        <input type="radio" name="sexo" id="mujer" value="mujer">mujer
+        <br>
+
+        <input class="for" type="checkbox" name="terminos"
+        id="terminos" value="hombre">terminos y condiciones
+        <br>
+
+        <a href="videojuegos.html"></a>><input type="submit" id="btn" name="btn" value="Enviar"></a>
+
+
+
+
+    </form>
+        
+<script>
+    var formulario = document.getElementsByName('formulario')[0], elementos = formulario.elements, boton = document.getElementById('btn');
+
+    var validarNombre = function(e){
+        if (formulario.nombre.value == 0){
+            alert("completa el campo nombre");
+            e.preventDefault();
+            
+        }
+    }
+
+    var validarapellidoP = function(e){
+        if (formulario.apellidoP.value == 0) {
+            alert("Completa el campo apellidoP")
+            e.preventDefault();
+        }
+    }
+
+    var validarapellidoM = function(e){
+        if (formulario.apellidoM.value == 0) {
+            alert("Completa el campo apellidoM")
+            e.preventDefault();
+        }
+    }
+
+    var validarnumtelefono = function(e){
+        if (formulario.numtelefono.value == 0) {
+            alert("Completa el campo numtelefono")
+            e.preventDefault();
+        }
+    }
+
+    var validarradio =function(e){
+        if (formulario.sexo[0].checked ==true || formulario.sexo[1].checked==true){
+        }else{
+            alert("completa el campo sexo");
+            e.preventDefault();
+        }
+    }
+
+    var validarcheckbox = function(e){
+        if (formulario.terminos.checked == false) {
+           alert("Completa el campo terminos");
+           e.preventDefault(); 
+        }
+        e.preventDefault();
+    }
+    
+  
+    var validar = function(e){
+        validarNombre(e);
+        validarapellidoP(e);
+        validarapellidoM(e);
+        validarnumtelefono(e);
+        validarradio(e);
+        validarcheckbox(e);
+        
+    }
+
+
+
+   
+    formulario.addEventListener("submit", validar);
+
+</script> 
+
+    
+    
+</body>
+</html>

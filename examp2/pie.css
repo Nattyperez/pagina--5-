@@ -1,0 +1,89 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pie{
+    width: 100%;
+    background-color: rgba(231, 229, 97, 0.842);
+}
+
+.iconofo{
+    width: 50px;
+    height: 40px;
+}
+
+.icono{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: auto;
+}
+
+.pie .uno{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 40px 0px;
+}
+
+.pie .uno .logopie figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pie .uno .logopie figure img{
+    width: 100px;
+
+}
+.pie .dos{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.pie .uno .logopie h2{
+    padding: 40px;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-family: cooper;
+    font-size: 40px;
+}
+
+
+.pie .uno .logopie p{
+    color: black;
+    text-align: justify;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.pie .uno .logopie h3{
+    color: floralwhite;
+    padding: 25px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.pie .uno .logopie a{
+    margin: auto;
+    padding: 30px;
+}
+
+@media screen  and (max-width:800px) {
+    .pie .uno{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    
+}

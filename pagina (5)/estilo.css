@@ -1,0 +1,162 @@
+.portada{
+    height: 800px;
+    background-image: url(img2/control.webp);
+    color: antiquewhite;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(196, 220, 255);
+    background-blend-mode: darken;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+
+}
+h1{
+    text-align: center;
+}
+
+h5{
+  font-size: 30px;
+}
+/* body{
+    background-color: rgba(47, 125, 220, 0.306);
+} */
+
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    color:aqua;
+    background-color: black;
+}
+
+/* .linea{
+    border-top: 5px solid black;
+    margin-bottom: 40px;
+} */
+
+
+.cambio{
+    width: 200px;
+    transition: 300ms all ease;
+    padding: 10px;
+}
+
+.grande{
+    width: 400px;
+}
+
+.cartas{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+    align-items: center;
+   justify-content: center;
+   padding: 40px 0px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 500ms ease;
+    cursor: default;
+    width: 100%;
+    height: 100%;
+
+
+    
+}
+p{
+    
+    font-family: cursive;
+}
+
+img{
+    border: 3px;
+}
+#img-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.card-body{
+
+    border:  solid 5px black;
+    text-align: center;
+    border-radius: 10px;
+    transform: translateY(5%); 
+    background-color: rgb(163, 236, 241);
+    overflow: hidden;
+    transition: all 500MS ease;
+    cursor: default;
+    width: 100%;
+    height: 100%;
+}
+.card-body:hover{
+    box-shadow: 10px 10px 30px black;
+    transform: translateY(5%);
+}
+
+.boton{
+    background-color: beige;
+    color: black;
+    display: inline-block;
+    font-size: 1em;
+    margin-top: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    width: 120px;
+    text-decoration: none;
+    box-shadow: none;
+    border-radius: 8px;
+    align-items: center;
+    border: 3px solid rgb(190, 188, 188);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.videojugues{
+    
+   background-color:  rgba(231, 229, 97, 0.842);
+   border: 10px solid;
+   padding: 20px;
+   text-shadow: 2px 2px rgb(135, 244, 248);
+   font-size:30px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h4{
+    text-align: center;
+    font-size: 40px;
+    background: deepskyblue;
+    color: black;
+
+}
+p4{
+    font-family: 30px;
+}
+
+.card4{
+    text-align: center;
+    color: aliceblue;
+    width: 800px;
+    height: 200px;
+    padding: 20px;
+    background-color: green;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border:  6px solid black;
+    
+}
+
+
+
+
+

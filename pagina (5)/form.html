@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/include.js"></script>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    <div data-include="nav.html"></div>
+    <br>
+    <br>
+    <br>
+    <div class="from22">
+        <!-- link -->
+        <form  action="http://localhost/pagina%20(5)/tablas/index.php" method="post">
+        <br>
+        <h1>FORMULARIO</h1>
+        <br>
+        <form class="form3" action="" name="formulario" method="get">
+        <label>Id cliente: </label>
+        <input type="text" name="id_cliente" id ="id_cliente"  maxlength="30" placeholder="Escribe tu id_cliente"><br>
+        <br>
+        <label>Nombre: </label>
+        <input type="text" name="nombre"  id="nombre"  maxlength="30" placeholder="Escribe tu nombre" ><br>
+        <br>
+        <label>Apellido paterno: </label>
+        <input type="text"  name="apellido_p" id="apellido_p"  maxlength="30" placeholder="Escribe tu apellido_p" ><br>
+        <br>
+        <label>Apellido materno: </label>
+        <input type="text"  name="apellido_m" id="apellido_m"  maxlength="30" placeholder="Escribe tu apellido_m"><br>
+        <br>
+        <label>Telefono: </label>
+        <input type="text"  name="num_telefono" id="num_telefono" maxlength="30" placeholder="Escribe tu num_telefono"><br>
+        <br>
+        <label>Usuario: </label>
+        <input type="text"  name="usuario" id="usuario" maxlength="30" placeholder="Escribe tu usuario"><br>
+        <br>
+        <label>Contraseña: </label>
+        <input type="text"  name="contraseña" id="contraseña" maxlength="30" placeholder="Escribe tu contraseña"><br>
+        <br>
+        <!-- boton para enviar el formulario -->
+        <button type="submit" value="enviar">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        var formulario = document.getElementsByName('formulario')[0], elementos = formulario.elements, boton = document.getElementById('btn');
+    
+        var validarid_cliente = function(e){
+            if (formulario.id_cliente.value == 0){
+                alert("completa el campo id_cliente");
+                e.preventDefault();
+                
+     }
+        }
+    
+        var validarnombre = function(e){
+            if (formulario.nombre.value == 0) {
+                alert("Completa el campo nombre")
+                e.preventDefault();
+            }
+        }
+    
+        var validarapellido_p = function(e){
+            if (formulario.apellido_p.value == 0) {
+                alert("Completa el campo apellido_p")
+                e.preventDefault();
+            }
+        }
+
+        var validarapellido_m = function(e){
+            if (formulario.apellido_m.value == 0) {
+                alert("Completa el campo apellido_m")
+                e.preventDefault();
+            }
+        }
+    
+        var validarnum_telefono = function(e){
+            if (formulario.num_telefono.value == 0) {
+                alert("Completa el campo num_telefono")
+                e.preventDefault();
+            }
+        }
+       
+        var validarusuario = function(e){
+            if (formulario.usuario.value == 0) {
+                alert("Completa el campo usuario")
+                e.preventDefault();
+            }
+        }
+
+        var validarcontraseña = function(e){
+            if (formulario.contraseña.value == 0) {
+                alert("Completa el campo contraseña")
+                e.preventDefault();
+            }
+        }
+
+
+    
+         var validar = function(e){
+            validarid_cliente(e);
+            validarnombre(e);
+            validarapellido_p(e);
+            validarapellido_m(e);
+            validarnum_telefono(e);
+            validarusuario(e);
+            validarcontraseña(e);
+            
+        }
+    
+    
+    
+       
+        formulario.addEventListener("submit", validar);
+    
+    </script>
+    
+</body>
+</html>

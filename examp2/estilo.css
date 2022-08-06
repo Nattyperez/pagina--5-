@@ -1,0 +1,77 @@
+.portada{
+    height: 800px;
+    background-image: url("img/Lugares turisticos de Mexico.jpg");
+    color: antiquewhite;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(196, 220, 255);
+    background-blend-mode: darken;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+
+}
+.viaje{
+   background-color:  rgba(231, 229, 97, 0.842);
+   border: 10px solid;
+   padding: 20px;
+   text-shadow: 2px 2px rgb(135, 244, 248);
+   font-size:30px ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cartas{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+    align-items: center;
+   justify-content: center;
+   padding: 40px 0px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 500ms ease;
+    cursor: default;
+    width: 100%;
+    height: 100%;
+
+
+    
+}
+p{
+    
+    font-family: cursive;
+}
+
+img{
+    border: 3px;
+}
+#img-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.card-body{
+
+    border:  solid 5px black;
+    text-align: center;
+    border-radius: 10px;
+    transform: translateY(5%); 
+    background-color: rgb(163, 236, 241);
+    overflow: hidden;
+    transition: all 500MS ease;
+    cursor: default;
+    width: 100%;
+    height: 100%;
+}
+.card-body:hover{
+    box-shadow: 10px 10px 30px black;
+    transform: translateY(5%);
+}
