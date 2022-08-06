@@ -1,0 +1,46 @@
+
+/*
+ min-height
+ max-height
+ min-width
+ max-width
+*/
+
+@media screen and (max-width: 1200px) {
+
+  .cartas {
+    display: block;
+  }
+  .card-body {
+    border-radius: 0;
+  }
+  .menu-horizontal {
+    flex-wrap: wrap;
+  }
+  .card4 {
+    height: 100%;
+    width: 100%;
+  }
+  .from22 {
+    height: 100%;
+    width: 100%;
+  }
+  .contenedor-imagenes {
+    height: 100%;
+    width: 100%;
+  }
+  .contenedor-imagenes .imagen {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .portada {
+    height: 100%;
+    width: 100%;
+  }  
+}
+  
+@media only screen and (min-width: 800px) {
+  
+}
+    
